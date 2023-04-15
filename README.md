@@ -20,13 +20,13 @@ Para executar a aplicação, siga os seguintes passos:
 
 ## POST /api/auth/signup - Cria um novo usuário. Deve receber o seguinte corpo:
 
-
+<pre>
 {
 	"name": "Renan",
 	"email": "renan@gmail.com",
 	"password": "123123"
 }
-
+</pre>
 
 ## POST /api/auth/login - Faz o login do usuário. Deve receber o seguinte corpo:
 
@@ -49,10 +49,11 @@ A resposta terá um token JWT que deve ser utilizado para acessar os outros endp
 
 ## POST /api/category - Cria uma nova categoria. Deve receber o seguinte corpo:
 
-
+<pre>
 {
   "name": "Categoria 1"
 }
+</pre>
 
 ## GET /api/category - Retorna todas as categorias cadastradas.
 
@@ -72,20 +73,21 @@ name, price, description, categry_id, file (arquivo de imagem);
 
 ## POST /api/order - Cria um novo pedido. Deve receber o seguinte corpo:
 
-
+<pre>
 {
 	"table": 25
 }
+</pre>
 
 ## POST /api/order/add - Adiciona ítem ao pedido. Deve receber o seguinte corpo:
 
-
+<pre>
 {
 	"order_id": "id do pedido criado.",
 	"product_id": "id do produto que irá ser adicionado ao pedido",
 	"amount": 5
 }
-
+</pre>
 
 
 ## GET /api/order - Retorna todos os pedidos cadastrados.
@@ -97,16 +99,18 @@ name, price, description, categry_id, file (arquivo de imagem);
 ## DELETE /api/order/remove?item_id=id - Remove o item do pedido com o ID informado.
 
 ## PATCH /api/order/send - Envia o pedido à cozinha. Deve receber o seguinte corpo:
-
+<pre>
 {
-	"order_id": "d8ce35ff-74fa-4b78-8cfc-647b293e0cbd"
+	"order_id": "id do pedido"
 }
-
+</pre>
 ## PATCH /api/order/finish - A cozinha finaliza o pedido. Deve receber o seguinte corpo:
 
+<pre>
 {
-	"order_id": "d8ce35ff-74fa-4b78-8cfc-647b293e0cbd"
+	"order_id": "id do pedido"
 }
+</pre>
 
 Licença
 Este projeto está licenciado sob a licença MIT. Leia o arquivo LICENSE para mais informações.
