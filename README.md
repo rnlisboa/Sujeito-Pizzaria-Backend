@@ -57,9 +57,9 @@ A resposta terá um token JWT que deve ser utilizado para acessar os outros endp
 
 ## GET /api/category - Retorna todas as categorias cadastradas.
 
-# Itens de Consumo (PRODUTOS)
+# CARDÁPIO
 
-## POST /api/product - Cria um novo item de consumo. Deve receber o seguinte corpo:
+## POST /api/product - Cria um novo item de consumo para o cardápio. Deve receber o seguinte corpo:
 
 - Multipart
 
@@ -67,7 +67,7 @@ name, price, description, categry_id, file (arquivo de imagem);
 
 ## GET /api/category/product - Retorna todos os itens de consumo cadastrados por categoria.
 
-## DELETE /api/itens/:id - Remove o item de consumo com o ID informado.
+## DELETE /api/itens/:id - Remove o item do cardápio com o ID informado.
 
 # Pedidos
 
