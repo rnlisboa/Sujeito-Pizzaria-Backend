@@ -10,7 +10,7 @@ Para executar a aplicação, siga os seguintes passos:
 
 1. Clone este repositório em sua máquina local.
 2. Abra um terminal na pasta raiz da aplicação.
-3. Execute o comando `yarn install` para instalar as dependências do projeto.
+3. Execute o comando `yarn add` para instalar as dependências do projeto.
 4. Execute o comando `yarn dev` start para iniciar a aplicação.
 5. Acesse http://localhost:3333 para utilizar a API.
 
