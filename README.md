@@ -1,4 +1,4 @@
-# Sujeito-Pizzaria-Backend
+# Sujeito-Pizzaria
 Projeto de Curso - Sujeito pizzaria é um projeto onde um usuário (garçom) pode coletar os pedidos dos clientes e enviar para cozinha, o usuário desta, por sua vez, recebe a listagem dos pedidos e confirma os que já estão prontos.
 
 # API NodeJS com JWT para cadastro e login
@@ -10,7 +10,7 @@ Para executar a aplicação, siga os seguintes passos:
 
 1. Clone este repositório em sua máquina local.
 2. Abra um terminal na pasta raiz da aplicação.
-3. Execute o comando `yarn install` para instalar as dependências do projeto.
+3. Execute o comando `yarn add` para instalar as dependências do projeto.
 4. Execute o comando `yarn dev` start para iniciar a aplicação.
 5. Acesse http://localhost:3333 para utilizar a API.
 
@@ -57,9 +57,9 @@ A resposta terá um token JWT que deve ser utilizado para acessar os outros endp
 
 ## GET /api/category - Retorna todas as categorias cadastradas.
 
-# Itens de Consumo (PRODUTOS)
+# CARDÁPIO
 
-## POST /api/product - Cria um novo item de consumo. Deve receber o seguinte corpo:
+## POST /api/product - Cria um novo item de consumo para o cardápio. Deve receber o seguinte corpo:
 
 - Multipart
 
@@ -67,7 +67,7 @@ name, price, description, categry_id, file (arquivo de imagem);
 
 ## GET /api/category/product - Retorna todos os itens de consumo cadastrados por categoria.
 
-## DELETE /api/itens/:id - Remove o item de consumo com o ID informado.
+## DELETE /api/itens/:id - Remove o item do cardápio com o ID informado.
 
 # Pedidos
 
